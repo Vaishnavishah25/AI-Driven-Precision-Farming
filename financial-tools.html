@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Tools</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Financial Tools</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="learn-more.html">About Us</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+                <li><a href="index.html#team">Our Team</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="financial-tools">
+            <h2>Financial Tools</h2>
+            <ul>
+                <li><strong>Loan and Subsidy Calculators:</strong> Tools that help farmers calculate potential loans and subsidies they can avail for their farming operations.</li>
+                <li><strong>Revenue Prediction:</strong> Based on weather, market prices, and input costs, provide forecasts for potential earnings from specific crops.</li>
+                <li><strong>Record Keeping:</strong> A digital tool for farmers to track expenses, income, and other financial aspects of farming.</li>
+            </ul>
+            <p>To connect with our financial tools, please fill out the form below:</p>
+            <form id="financial-tools-form" action="submit-form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="tool">Financial Tool Interested In:</label>
+                <select id="tool" name="tool" required>
+                    <option value="loan-calculators">Loan and Subsidy Calculators</option>
+                    <option value="revenue-prediction">Revenue Prediction</option>
+                    <option value="record-keeping">Record Keeping</option>
+                </select>
+
+                <label for="message">Additional Information:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 AI-Driven Precision Farming. All rights reserved.</p>
+    </footer>
+</body>
+</html>

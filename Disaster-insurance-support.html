@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster and Insurance Support</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Disaster and Insurance Support</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="learn-more.html">About Us</a></li> 
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+                <li><a href="index.html#team">Our Team</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>Our Disaster and Insurance Support services aim to provide farmers with the necessary tools and information to prepare for and recover from natural disasters. We offer guidance on selecting the right crop insurance and provide resources to aid in disaster recovery.</p>
+        </section>
+        <section id="insurance-tools">
+            <h2>Insurance Tools</h2>
+            <p>Choosing the right crop insurance is essential for safeguarding against natural disasters such as floods, droughts, and storms. Here are some valuable tools and resources to help you make informed decisions:</p>
+            <ul>
+                <li><a href="#">Crop Insurance Calculator</a>: Use this tool to estimate the insurance coverage you need based on your crop type and area.</li>
+                <li><a href="#">Insurance Providers Directory</a>: Explore a list of reputable insurance providers in your region to find the best options for your needs.</li>
+                <li><a href="#">Insurance Plan Comparison</a>: Compare different insurance plans to determine which one offers the best coverage and benefits for your specific situation.</li>
+                <li><a href="#">Insurance Claim Assistance</a>: Get step-by-step guidance on how to file an insurance claim and ensure you receive the compensation you deserve.</li>
+            </ul>
+            <form id="insurance-form" action="insurance-result.html" method="post">
+                <label for="crop-type">Crop Type:</label>
+                <input type="text" id="crop-type" name="crop-type" required>
+                <label for="area">Area (in acres):</label>
+                <input type="text" id="area" name="area" required>
+                <button type="submit">Calculate Insurance</button>
+            </form>
+        </section>
+        <section id="disaster-recovery-guide">
+            <h2>Disaster Recovery Guide</h2>
+            <p>Recovering from a disaster can be challenging, but with the right support and resources, you can rebuild and recover effectively. Here are some steps and resources to help you through the recovery process:</p>
+            <ul>
+                <li><a href="#">Financial Aid Resources</a>: Discover available financial aid programs and grants to assist you in the recovery process.</li>
+                <li><a href="#">Recovery Steps Checklist</a>: Follow this comprehensive checklist to ensure you cover all essential steps during disaster recovery.</li>
+                <li><a href="#">Crop Replanting Suggestions</a>: Get expert advice on the best crops to replant after a disaster to maximize your yield and recovery.</li>
+                <li><a href="#">Mental Health Support</a>: Access resources and support for maintaining your mental well-being during challenging times.</li>
+            </ul>
+            <form id="recovery-form" action="recovery-result.html" method="post">
+                <label for="disaster-type">Disaster Type:</label>
+                <input type="text" id="disaster-type" name="disaster-type" required>
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+                <button type="submit">Get Recovery Steps</button>
+            </form>
+        </section>
+        <section id="success-stories">
+            <h2>Success Stories</h2>
+            <p>Read about how other farmers have successfully navigated disasters and rebuilt their livelihoods with the help of our Disaster and Insurance Support services:</p>
+            <ul>
+                <li><a href="#">Farmer John's Story</a>: Discover how Farmer John recovered from a devastating flood and rebuilt his farm.</li>
+                <li><a href="#">Farmer Lisa's Journey</a>: Learn how Farmer Lisa used crop insurance and recovery resources to bounce back after a severe drought.</li>
+                <li><a href="#">Farmer Ahmed's Experience</a>: See how Farmer Ahmed navigated the aftermath of a storm and restored his farm to its former glory.</li>
+            </ul>
+            <form id="story-form" action="submit-story.html" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="story">Your Story:</label>
+                <textarea id="story" name="story" required></textarea>
+                <button type="submit">Submit Your Story</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 AI-Driven Precision Farming. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

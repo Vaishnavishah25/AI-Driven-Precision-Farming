@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Schemes and Subsidies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Government Schemes and Subsidies</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="learn-more.html">About Us</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+                <li><a href="index.html#team">Our Team</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="government-schemes">
+            <div class="scheme-info">
+                <h3>Scheme Information</h3>
+                <p>Learn about available government schemes, subsidies, and loans for farming, machinery, or insurance.</p>
+            </div>
+            <div class="online-application">
+                <h3>Online Application Assistance</h3>
+                <p>Apply for schemes and subsidies online directly from our website with step-by-step guidance.</p>
+                <button onclick="showApplicationForm()">Apply Now</button>
+            </div>
+            <div class="eligibility-checker">
+                <h3>Eligibility Checker</h3>
+                <p>Check your eligibility for various government programs and financial aid.</p>
+                <button onclick="showEligibilityForm()">Check Eligibility</button>
+            </div>
+
+            <!-- Application Form -->
+            <div id="application-form" style="display: none;">
+                <h3>Application Form</h3>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="scheme">Scheme:</label>
+                    <select id="scheme" name="scheme">
+                        <option value="subsidy">Subsidy</option>
+                        <option value="loan">Loan</option>
+                        <option value="insurance">Insurance</option>
+                    </select>
+                    <label for="details">Details:</label>
+                    <textarea id="details" name="details" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <!-- Eligibility Form -->
+            <div id="eligibility-form" style="display: none;">
+                <h3>Eligibility Checker</h3>
+                <form>
+                    <label for="farmer-type">Farmer Type:</label>
+                    <select id="farmer-type" name="farmer-type">
+                        <option value="small">Small Farmer</option>
+                        <option value="large">Large Farmer</option>
+                    </select>
+                    <label for="region">Region:</label>
+                    <input type="text" id="region" name="region" required>
+                    <button type="submit">Check</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 AI-Driven Precision Farming. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
